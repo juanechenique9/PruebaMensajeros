@@ -1,0 +1,215 @@
+.main{
+    padding-top: 70px;
+   
+}
+
+.main-body{
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    background-color: white;
+    box-shadow: 0px 1px 16px -8px black;
+    margin-bottom: 30px;
+}
+
+.body-col1{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 20px
+}
+
+.body-col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.levels:hover{
+    
+    
+    color: hsl(180, 29%, 50%);
+
+}
+
+.levels{
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.body-col2-1{
+    padding-right: 10px;
+   color:hsl(180, 29%, 50%) !important;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.body-col2-2{
+    
+    border-radius: 0.25rem;
+    border: 1px solid hsl(180, 52%, 96%);
+    color: white !important;
+    background-color: hsl(180, 29%, 50%);
+    font-size: 15px;
+}
+
+.body-col2-3{
+    
+    
+}
+
+.body-col2-4{
+    padding-right: 10px;
+    font-size: 13px;
+    font-weight: 100;
+    color: gray;
+}
+
+
+.imageSize{
+    height: 75px;
+    width: 75px;
+}
+
+.body-col3{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.body-col3-1:hover {
+   
+    background-color: hsl(180, 29%, 50%);
+    cursor: pointer;
+    color: white;
+}
+
+.body-col3-1{
+    border-radius: 0.25rem;
+    border: 1px solid hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+    background-color: hsl(180, 52%, 96%);
+   padding: 5px;
+   font-size: 15px;
+   font-weight: 500;
+}
+
+.col-sm-5{
+    align-self: center;
+}
+
+.label-new {
+    border-radius: 25%;
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    font-size: 10px;
+    padding: 3px;
+}
+
+.label-featured {
+    border-radius: 25%;
+    background-color: black;
+    color: white !important;
+    font-size: 10px;
+    padding: 3px;
+    margin-left: 4px;
+}
+
+.caja-filtros{
+    background-color: white;
+    margin-top: -100px;
+    padding: 10px;
+    border-radius: 0.25rem;
+    box-shadow: 0px 1px 16px -8px black;
+    min-height: 56px;
+}
+
+.criterios{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 23px;
+}
+
+.criterios-flex{
+    list-style: none;
+}
+
+.criterios li {
+    display: flex;
+}
+
+.criterios-add{
+    display: flex;
+    background-color: white;
+    font-size: 15px;
+    border-radius: 0.25rem;
+    box-shadow: 0px 1px 16px -8px black;
+}
+
+.criterios-org{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    
+    
+}
+
+.criterios-add ul{
+
+padding: 0px;
+padding-right: 39px;
+padding-top: 18px;
+
+}
+
+.criterios-add li{
+    cursor: pointer;
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+    font-size: 14px;
+    font-weight: bold;
+   
+    border-radius: 0.25rem;
+    border: 1px solid hsl(180, 52%, 96%);;
+
+    
+}
+
+.criterios-add li:hover{
+    background-color: white;
+
+    
+}
+
+.criterios li div{
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 0.25rem;
+    border: 1px solid hsl(180, 52%, 96%);;
+}
+
+.criterios li span {
+    background-color: hsl(180, 29%, 50%);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    border: 1px solid hsl(180, 29%, 50%);
+    font-size: 14px
+}
+
+.criterios li span:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.clear-btn{
+color: hsl(180, 29%, 50%);
+cursor: pointer;
+}

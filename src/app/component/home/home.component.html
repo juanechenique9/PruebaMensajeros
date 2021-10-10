@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="main">
+        
+            <div class="row caja-filtros">
+                
+                <ul class="criterios" *ngFor="let criterio of criteriosSeleccionados">
+                    <li>
+                        <div>
+                            {{ criterio }}
+                        </div>
+                        <span (click)="quitarCriterio(criterio)">X</span>
+                    </li>
+                </ul>
+                <div class="clear-btn">
+                    <a (click)="limpiarCriterios()">Clear</a>
+                </div>
+          
+        </div>
+            <div class="criterios-org">
+           <div class="criterios-add">
+                <ul class="criterios-flex" *ngFor="let criterio of criterios">
+                    <li (click)="agregarCriterio(criterio)">{{ criterio }}</li>
+                </ul>
+            </div>
+            </div>
+        
+        <div class="main-body" *ngFor="let user of vacantes">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="body-col1">
+                            <img src="{{user.logo}}" alt="image" class="imageSize" />
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="body-col2">
+                            <div>
+                                <a class="body-col2-1">{{user.company}}</a>
+                                <a class="body-col2-2 label-new" *ngIf="user.new == true">NEW!</a> 
+                                <a  *ngIf="user.new == false"></a> 
+                                <a class="body-col2-3 label-featured" *ngIf="user.featured == true" >FEATURED</a>
+                                <a  *ngIf="user.featured == false" ></a>
+                            </div>
+                            <div class="levels">
+                                {{user.position}}
+                            </div>
+                            <div>
+                                <a class="body-col2-4">{{user.postedAt}}</a><a class="body-col2-4">{{user.contract}}</a><a class="body-col2-4" >{{user.location}}</a>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                            <div class="body-col3">
+                            <div class="body-col3-1" >{{user.role}}</div>
+                            <div class="body-col3-1">{{user.level}}</div>
+                            <div class="body-col3-1" *ngFor="let data of user.languages">{{data}}</div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
