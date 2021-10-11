@@ -16,13 +16,18 @@
                 </div>
           
         </div>
-            <div class="criterios-org">
-           <div class="criterios-add">
+
+        <div class="criterios-add">
+        <div class="criterios-org">
+        <div class="row">
+         
                 <ul class="criterios-flex" *ngFor="let criterio of criterios">
                     <li (click)="agregarCriterio(criterio)">{{ criterio }}</li>
                 </ul>
+         
             </div>
-            </div>
+        </div>
+        </div>
         
         <div class="main-body" *ngFor="let user of vacantes">
                 <div class="row">

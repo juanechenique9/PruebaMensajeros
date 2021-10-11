@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
   }
 
   obtenerDatos(){
-    this.bloqueInjection.getBloque().subscribe(vacantes =>{
+    this.bloqueInjection.getData().then(vacantes =>{
       this.vacantes = vacantes;
       this.vacantesFiltradas = vacantes;
       this.obtenerCriterios()
